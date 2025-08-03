@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion Overlay Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(45deg, #2196f3, #e91e63);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar a .icon {
+      font-size: 20px;
+    }
+    .navbar a.active {
+      transform: translateY(-5px);
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="https://www.notion.so/finans-243a3e2f918a80b48934c9652483cd84?source=copy_link" class="active">
+    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+    <span>Home</span>
+  </a>
+  <a href="#">
+    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+    <span>Profile</span>
+  </a>
+  <a href="#">
+    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+    <span>Messages</span>
+  </a>
+  <a href="#">
+    <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+    <span>Photos</span>
+  </a>
+  <a href="#">
+    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+    <span>Settings</span>
+  </a>
+</div>
+
+</body>
+</html>
